@@ -9,7 +9,7 @@ app = FastAPI()
 class InputData(BaseModel):
     file: UploadFile
 
-model = joblib.load("path_to_your_model.pkl")
+model = joblib.load("gradient_boosting_model.pkl")
 
 # Preprocess function
 def preprocess_data(df):
